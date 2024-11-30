@@ -3,11 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Terima kasih atas konfirmasinya!');
     };
 
-    const footer = document.querySelector('footer');
-    const confirmButton = document.createElement('button');
-    confirmButton.textContent = 'Konfirmasi Kehadiran';
+    const confirmButton = document.getElementById('confirmButton');
     confirmButton.onclick = thankYouMessage;
-    footer.appendChild(confirmButton);
 });
-
-
